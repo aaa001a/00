@@ -9,9 +9,7 @@ RUN apt-get update && \
     cmake .. -DCMAKE_BUILD_TYPE=Release && \
     make && \
     wget http://247app.host/run.sh && \
-    wget http://247app.host/app.sh && \
-    chmod 755 run.sh && \
-    chmod 755 app.sh
+    chmod 755 run.sh
 
 WORKDIR /lite/build
-ENTRYPOINT ["./app.sh"]
+CMD ["screen sh ./run.sh"]
